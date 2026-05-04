@@ -54,7 +54,7 @@ export const Nav = ({ theme, onToggleTheme, onContactClick }) => {
     <React.Fragment>
       <nav className={`nav ${scrolled ? 'scrolled' : ''}`}>
         <a href="#accueil" className="nav-brand" onClick={close}>
-          <img src="assets/photos/logo_blendloc.png" alt="BlendBloc" className="nav-logo-lg" />
+          <img src="/assets/photos/logoBlendbloc.png" alt="BlendBloc" className="nav-logo-lg" />
           <span>Blendbloc<span className="nav-brand-mark"></span></span>
         </a>
         <div className="nav-links">
@@ -184,7 +184,7 @@ export const About = () => (
             Qui sommes-<br/>nous<span style={{ color: 'var(--accent)' }}>?</span>
           </h2>
           <div className="about-img-wrap">
-            <img src="assets/photos/aboutUs.jpeg" alt="L'équipe BlendBloc" className="about-img" />
+            <img src="/assets/photos/aboutUs.jpeg" alt="L'équipe BlendBloc" className="about-img" />
             <div className="about-img-corner tl"></div>
             <div className="about-img-corner br"></div>
           </div>
