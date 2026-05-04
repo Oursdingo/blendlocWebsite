@@ -2,6 +2,11 @@
 // BlendBloc — App root
 // =============================================
 
+import React from 'react';
+import { Nav, Hero, Marquee, About, Approche, useReveal } from './sections-1.jsx';
+import { Services, Domaines, Resultats, Pourquoi, Contact, Footer } from './sections-2.jsx';
+import { TweaksPanel, useTweaks, TweakSection, TweakRadio } from './tweaks-panel.jsx';
+
 const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
   "theme": "dark"
 }/*EDITMODE-END*/;
@@ -53,4 +58,4 @@ const App = () => {
   );
 };
 
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+export default App;

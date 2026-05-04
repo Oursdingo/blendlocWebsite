@@ -1,8 +1,9 @@
 // =============================================
 // BlendBloc — Sections (Hero, About, Approche, Services...)
 // =============================================
+import React from 'react';
 
-const useReveal = () => {
+export const useReveal = () => {
   React.useEffect(() => {
     const els = document.querySelectorAll('.reveal');
     const io = new IntersectionObserver((entries) => {
@@ -19,7 +20,7 @@ const useReveal = () => {
 };
 
 // ---------------- NAV ----------------
-const Nav = ({ theme, onToggleTheme, onContactClick }) => {
+export const Nav = ({ theme, onToggleTheme, onContactClick }) => {
   const [scrolled, setScrolled] = React.useState(false);
   const [active, setActive] = React.useState('accueil');
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -92,7 +93,7 @@ const Nav = ({ theme, onToggleTheme, onContactClick }) => {
 };
 
 // ---------------- HERO ----------------
-const Hero = () => (
+export const Hero = () => (
   <section id="accueil" className="hero">
     <div className="container">
       <div className="hero-meta reveal">
@@ -151,7 +152,7 @@ const Hero = () => (
 );
 
 // ---------------- MARQUEE ----------------
-const Marquee = () => {
+export const Marquee = () => {
   const items = ['Connecter', 'Captiver', 'Convertir'];
   const block = (
     <span>
@@ -173,7 +174,7 @@ const Marquee = () => {
 };
 
 // ---------------- ABOUT ----------------
-const About = () => (
+export const About = () => (
   <section id="a-propos" className="about">
     <div className="container">
       <div className="about-grid">
@@ -223,7 +224,7 @@ const About = () => (
 );
 
 // ---------------- APPROCHE ----------------
-const Approche = () => (
+export const Approche = () => (
   <section className="approach">
     <div className="container">
       <div className="approach-header reveal">
@@ -260,4 +261,3 @@ const Approche = () => (
   </section>
 );
 
-Object.assign(window, { Nav, Hero, Marquee, About, Approche, useReveal });

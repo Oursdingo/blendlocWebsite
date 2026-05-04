@@ -1,9 +1,10 @@
 // =============================================
 // BlendBloc — Sections (Services, Domaines, Résultats, Pourquoi, Contact, Footer)
 // =============================================
+import React from 'react';
 
 // ---------------- SERVICES ----------------
-const Services = () => {
+export const Services = () => {
   const [open, setOpen] = React.useState(0);
   const items = [
     {
@@ -78,7 +79,7 @@ const Services = () => {
 };
 
 // ---------------- DOMAINES ----------------
-const Domaines = () => (
+export const Domaines = () => (
   <section className="domains">
     <div className="container">
       <div className="approach-header reveal" style={{ marginBottom: 56 }}>
@@ -109,7 +110,7 @@ const Domaines = () => (
 );
 
 // ---------------- RÉSULTATS ----------------
-const Resultats = () => {
+export const Resultats = () => {
   const [counts, setCounts] = React.useState([0, 0, 0, 0]);
   const targets = [32, 1000, 40, 10];
   const ref = React.useRef(null);
@@ -173,7 +174,7 @@ const Resultats = () => {
 };
 
 // ---------------- POURQUOI ----------------
-const Pourquoi = () => {
+export const Pourquoi = () => {
   const items = [
     'Compréhension fine des audiences jeunes et étudiantes',
     'Expérience terrain et digitale en parallèle',
@@ -209,7 +210,7 @@ const Pourquoi = () => {
 };
 
 // ---------------- CONTACT ----------------
-const Contact = () => {
+export const Contact = () => {
   const [submitted, setSubmitted] = React.useState(false);
   const [form, setForm] = React.useState({ name: '', email: '', sujet: '', message: '' });
 
@@ -322,7 +323,7 @@ const Contact = () => {
 };
 
 // ---------------- FOOTER ----------------
-const Footer = () => (
+export const Footer = () => (
   <footer className="footer">
     <div className="footer-top">
       <div>
@@ -354,4 +355,3 @@ const Footer = () => (
   </footer>
 );
 
-Object.assign(window, { Services, Domaines, Resultats, Pourquoi, Contact, Footer });
