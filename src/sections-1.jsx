@@ -2,6 +2,7 @@
 // BlendBloc — Sections (Hero, About, Approche, Services...)
 // =============================================
 import React from 'react';
+import { Sun, Moon } from 'lucide-react';
 
 export const useReveal = () => {
   React.useEffect(() => {
@@ -69,8 +70,11 @@ export const Nav = ({ theme, onToggleTheme, onContactClick }) => {
           ))}
         </div>
         <div className="nav-actions">
-          <button className="theme-toggle" onClick={onToggleTheme} aria-label="Thème">
-            {theme === 'dark' ? '☼' : '☾'}
+          <button className={`theme-toggle ${theme}`} onClick={onToggleTheme} aria-label="Thème">
+            <span className="theme-icon-wrapper">
+              <Sun className="icon-sun" size={18} />
+              <Moon className="icon-moon" size={18} />
+            </span>
           </button>
           <a href="#contact" className="btn btn-primary btn-arrow">Nous contacter</a>
           <button
