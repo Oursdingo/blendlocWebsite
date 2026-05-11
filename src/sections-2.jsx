@@ -9,22 +9,22 @@ export const Services = () => {
   const items = [
     {
       name: 'Marketing & acquisition',
-      tags: ['Stratégies de croissance', 'Campagnes d\'acquisition', 'Réseaux sociaux', 'Activation de communautés'],
+      tags: ['Stratégies de croissance', 'Campagnes d\'acquisition', 'Réseaux sociaux'],
       image: '/assets/photos/marketing.jpeg',
     },
     {
       name: 'Digital & technologie',
-      tags: ['Sites web', 'Applications mobiles', 'Automatisation', 'Outils CRM'],
+      tags: ['Sites web', 'Applications mobiles', 'Automatisation'],
       image: '/assets/photos/digital.jpeg',
     },
     {
       name: 'Événementiel',
-      tags: ['Organisation d\'événements', 'Activations terrain', 'Tournois & compétitions', 'Gestion logistique'],
+      tags: ['Organisation d\'événements', 'Activations terrain', 'Tournois & compétitions'],
       image: '/assets/photos/evenementiel.jpeg',
     },
     {
       name: 'Branding & contenu',
-      tags: ['Identité visuelle', 'Design graphique', 'Production de contenu', 'Storytelling de marque'],
+      tags: ['Identité visuelle', 'Design graphique', 'Storytelling de marque'],
       image: '/assets/photos/branding.jpeg',
     },
   ];

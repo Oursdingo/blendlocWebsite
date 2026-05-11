@@ -102,8 +102,8 @@ export const Hero = () => (
     <div className="container">
       <div className="hero-meta reveal">
         <div className="hero-meta-row">
-          <span>// AGENCE</span>
-          <span>EST. BURKINA FASO</span>
+          <span>// AGENCE — BURKINA FASO</span>
+         
         </div>
         <div className="hero-meta-row">
           <span>v.2026 — ACTIVE</span>
