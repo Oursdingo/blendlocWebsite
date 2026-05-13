@@ -100,7 +100,7 @@ export const Nav = ({ theme, onToggleTheme, onContactClick }) => {
 export const Hero = () => (
   <section id="accueil" className="hero">
     <div className="container">
-      <div className="hero-meta reveal">
+      {/* <div className="hero-meta reveal">
         <div className="hero-meta-row">
           <span>// AGENCE — BURKINA FASO</span>
          
@@ -108,7 +108,7 @@ export const Hero = () => (
         <div className="hero-meta-row">
           <span>v.2026 — ACTIVE</span>
         </div>
-      </div>
+      </div> */}
 
       <h1 className="h-display hero-title reveal">
         Connecter les marques<br/>
